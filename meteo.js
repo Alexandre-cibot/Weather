@@ -51,7 +51,7 @@ var prompt = require('prompt');
 var printMessage = function(city, temperatureNow, temperatureMax, temperatureMin) {
     console.log(
         '......'+'\n'+'.....'+'\n'+'....'+'\n'+'/* Weather Informations dear Alex */' + '\n' +
-        'A ' + city + ', la température est de ' + temperatureNow + '°C acutellement.' + "\n" +
+        'A ' + city + ', la température est de ' + temperatureNow + '°C actuellement.' + "\n" +
         'Température maximum : ' + temperatureMax + '°C' + "\n" +
         'Température minimum : ' + temperatureMin + '°C' + "\n" +
         '......'+'\n'+'.....'+'\n'+'....'+'\n'
