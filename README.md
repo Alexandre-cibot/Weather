@@ -1,7 +1,7 @@
 # Weather
 See the current weather, with command line
 
-##requirement
+##Requirement
 Download and install node.js https://nodejs.org/en/
 
 ##How to use
