@@ -9,8 +9,19 @@ var prompt = require('prompt');
     var city = result.city;
     // I will check the weather of Bussy-Saint-Georges pretty much everyday, so I set this city as the default city.
     if(city == ''){city = 'Bussy-Saint-Georges,fr'}
-        
-    var request = http.get('http://api.openweathermap.org/data/2.5/forecast/city?q=' + city + '&APPID=d8e3d3cfdccb6e72084a58fe33e2104c&units=metric', function(response){
+
+    //To be faster
+    switch(city){
+        case "maison":
+            city = 'Bussy-Saint-Georges,fr';
+            break;
+        case "travail":
+            city = 'Levallois-Perret,fr';
+            break;
+        //Add as many keyboard shortcut you need
+    }
+
+    var request = http.get('http://api.openweathermap.org/data/2.5/forecast/city?q=' + city + '&APPID=ed877c27dd1d147a4a5ebbb5de0c8c2c&units=metric', function(response){
     //console.log(response.statusCode);
     var body ='';
     response.on('data', function(chunk){
