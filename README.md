@@ -1,10 +1,10 @@
 # Weather
 See the current weather, with command line
 
-##Requirement
+## Requirement
 Download and install node.js https://nodejs.org/en/
 
-##How to use
+## How to use
 * npm install
 * launch the meteo.js in your command line.
 
